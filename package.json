@@ -1,0 +1,27 @@
+{
+  "name": "sql-library-manager",
+  "version": "1.0.0",
+  "description": "Web App with CRUD functionality to manage books",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acandael/sql-library-manager.git"
+  },
+  "author": "Anthony Candaele",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acandael/sql-library-manager/issues"
+  },
+  "homepage": "https://github.com/acandael/sql-library-manager#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "pug": "^2.0.3",
+    "sequelize": "^5.1.0",
+    "sequelize-cli": "^5.4.0",
+    "sqlite3": "^4.0.6"
+  }
+}
