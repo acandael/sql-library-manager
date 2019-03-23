@@ -1,8 +1,6 @@
 const express = require('express');
-const Book = require('../models').Book;
-
-// Create new router
 const router = express.Router({ mergeParams: true });
+const Book = require('../models').Book;
 
 // POST delete book
 router.post('/', (req, res) => {
@@ -24,5 +22,4 @@ router.post('/', (req, res) => {
     });
 });
 
-// Export router
 module.exports = router;

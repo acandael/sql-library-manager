@@ -1,8 +1,6 @@
 const express = require('express');
-const Book = require('../models').Book;
-
-// Create new router
 const router = express.Router({ mergeParams: true });
+const Book = require('../models').Book;
 
 // GET show book detail form
 router.get('/', (req, res) => {
@@ -21,7 +19,7 @@ router.get('/', (req, res) => {
     });
 });
 
-// POST update book info in the database
+// POST update book in the database
 router.post('/', (req, res) => {
   Book.findOne({
     where: { id: req.params.id }
@@ -53,5 +51,4 @@ router.post('/', (req, res) => {
     });
 });
 
-// Export router
 module.exports = router;
