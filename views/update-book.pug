@@ -1,6 +1,7 @@
 extends layout.pug
 
 block content
+    include formErrors
     h1 Update Book
     form(action=`/books/${book.id}`, method="post")
         p

@@ -1,0 +1,6 @@
+if(errors)
+    p The following errors prevent the creation/update of your book.
+    ul.error
+        each error in errors
+            li
+                =error.message
